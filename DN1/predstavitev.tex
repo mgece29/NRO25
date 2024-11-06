@@ -1,0 +1,58 @@
+\documentclass{beamer}
+\usepackage[slovene]{babel}
+\title{Napredna računalniška orodja - Domača naloga 1}
+\author{Marija Gecheva}
+\date{2024}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Kazalo}
+    \tableofcontents
+\end{frame}
+
+
+\begin{frame}
+\section{Naloga1\_1.txt}
+\frametitle{Naloga1\_1.txt}
+    \begin{itemize}
+        \item Prva vrstica vsebuje oznako podatkov ("čas [s]").
+        \item Druga vrstica navaja, da je v datoteki 100 vrstic, vsaka z eno časovno vrednostjo.
+        \item Časovne vrednosti so shranjene v vektorju $t$.
+    \end{itemize}
+    \vspace{0.5cm}
+    \textbf{MATLAB funkcija za uvoz podatkov:} \texttt{importdata} \\
+    \begin{itemize}
+        \item Sintaksa: \texttt{importdata(filename, delimiterIn, headerlinesIn);}
+        \item Vhodi: $filename$ (ime datoteke), $delimiterIn$ (ločilo med podatki), $headerlinesIn$ (število začetnih vrstic).
+        \item Izhod: Podatki so shranjeni v $data.data$, iz kje dobimo vektor $t$ s časovnimi vrednostmi.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\section{Graf $P(t)$}
+\frametitle{Graf $P(t)$}
+    \includegraphics[width=0.8\textwidth]{nro graf.png}
+    \centering
+\end{frame}
+
+
+\begin{frame}
+\section{Trapezna metoda}
+\frametitle{Trapezna metoda}
+    \textbf{Formula za trapezna metoda:}
+    \[
+    \int_{a}^{b} f(x) \, dx \approx \frac{\Delta x}{2} \left( f(x_0) + 2f(x_1) + 2f(x_2) + \dots + 2f(x_{n-1}) + f(x_n) \right)
+    \]
+    
+    \vspace{0.5cm}
+    \textbf{Rezultat} \\
+    Rezultat smo dobili: $17.1665$
+\end{frame}
+
+\end{document}
+
